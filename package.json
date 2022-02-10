@@ -1,22 +1,28 @@
 {
-  "main": "dist/index.js",
+  "name": "video_share",
+  "version": "1.0.0",
   "scripts": {
     "dev": "nodemon src/index.ts",
-    "start": "tsc && node dist/index.js"
+    "start": "node dist/src/index.js",
+    "build": "tsc"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hasnath1/video_share.git"
+  },
+  "dependencies": {
+    "@types/uuid": "^8.3.4",
+    "ejs": "^3.1.6",
+    "express": "^4.17.2",
+    "peer": "^0.6.1",
+    "socket.io": "^4.4.1",
+    "uuid": "^8.3.2"
   },
   "devDependencies": {
-    "@types/cors": "^2.8.12",
     "@types/express": "^4.17.13",
-    "@types/morgan": "^1.9.3",
-    "@types/node": "^17.0.16",
+    "@types/node": "^17.0.17",
     "nodemon": "^2.0.15",
     "ts-node": "^10.5.0",
     "typescript": "^4.5.5"
-  },
-  "dependencies": {
-    "cors": "^2.8.5",
-    "express": "^4.17.2",
-    "morgan": "^1.10.0",
-    "socket.io": "^4.4.1"
   }
 }
